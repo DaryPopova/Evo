@@ -25,7 +25,7 @@ public class Answer implements JsonObject {
 
     @Override
     public String toString() {
-        return "Answer{" +
+        return "{" +
                 "code=" + code +
                 ", description='" + description + '\'' +
                 '}';

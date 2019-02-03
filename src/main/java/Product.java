@@ -3,8 +3,7 @@ import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Product {
-
-     private Integer id;
+    private Integer id;
      private String name;
      private double price;
 
@@ -32,5 +31,14 @@ public class Product {
     @JsonGetter("price")
     public double getPrice() {
         return price;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
