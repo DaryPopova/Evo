@@ -9,7 +9,7 @@ public class ProgramExecutor {
 
     public static void main(String args[]) throws Exception {
         ObjectMapper mapper = new ObjectMapper();
-        Property property = mapper.readValue(new File("src/main/resources/property.json"), Property.class);
+        Property property = mapper.readValue(new File(args[0]), Property.class);
         String host = property.getHost();
 
         ArrayList<Test> tests = new ArrayList<>();
